@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Franklin:wght@900&family=Open+Sans:wght@300&display=swap');
+:root {                                              
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --primary:#221661;
+  --secondary:#CFFF00;
+  color:var(--secondary);
+}
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+*,h1{
+	margin:0;
+	padding:0;
+	font:inherit;
+}
+html{
+	color-scheme:dark light;
+	background-color:var(--primary)
+}
+body{
+	min-height:100svh;
+}
+img,picture,svg,video{
+	display:block;
+	max-width:100%;
+}
+#body{
+	display:grid;
+	grid-template-columns:0.15fr 1fr;
+}
+#nav{
+	background-color:var(--secondary);
+	min-height:100svh;
+	border-top-right-radius:2em;
+	border-bottom-right-radius:2em;
+	position: sticky;
+    	top: 0;
+    	height: 100svh;
+	display:grid;
+	grid-template-rows:repeat(1fr,7);
+	align-items:center;
+	justify-content:center;
+}
+#content{
+	background-color:var(--primary);
+	min-height:100svh;
+	padding-left:1em;
+	padding-top:1em;
+}
+.titles{
+	font-family: 'Libre Franklin', sans-serif;
+	text-transform:uppercase;
+}
+#hi{
+	font-size:6em;
+}
+.parag{
+	font-family: 'Open Sans', sans-serif;
+}
